@@ -3,7 +3,6 @@ name: Workflow Events
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-  workflow_dispatch:
 jobs:
   echo:
     runs-on: ubuntu-latest
