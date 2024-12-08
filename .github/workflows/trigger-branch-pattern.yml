@@ -1,0 +1,17 @@
+name: Trigger on Branch Pattern
+
+on:
+  push:
+    branches:
+      - 'feature/*'  
+      - 'hotfix/*'  
+
+jobs:
+  run-on-pattern:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: Print branch details
+        run: echo "Triggered on branch: ${{ github.ref_name }}"
