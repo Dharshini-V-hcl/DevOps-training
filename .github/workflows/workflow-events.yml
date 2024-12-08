@@ -2,7 +2,8 @@ name: Workflow Events
 
 on:
   push:
-  
+    branches:
+      - '**'  
   workflow_dispatch:
 jobs:
   echo:
