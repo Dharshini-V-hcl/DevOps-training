@@ -3,8 +3,8 @@ name: Trigger on Branch Pattern
 on:
   push:
     branches:
-      - 'feature/*'  
-      - 'hotfix/*'  
+      - 'feature/*'
+      - 'hotfix/*'
 
 jobs:
   run-on-pattern:
@@ -16,5 +16,3 @@ jobs:
 
       - name: Print branch details
         run: echo "Triggered on branch:${{ github.ref_name }}"
-
-
