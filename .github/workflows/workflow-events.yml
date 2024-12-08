@@ -3,7 +3,7 @@ name: Workflow Events
 on:
   push:
     branches:
-      - '**'  
+      - 'feature/*' 
   workflow_dispatch:
 jobs:
   echo:
